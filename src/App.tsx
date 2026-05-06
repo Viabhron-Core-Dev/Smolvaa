@@ -56,9 +56,9 @@ export default function App() {
   const handleLoadModel = () => {
     if (window.VaaBridge) {
       window.VaaBridge.loadModel(modelPath, 2048, true, 'onModelReady');
-      setMessages([{ role: 'assistant', content: 'Loading model...' }]);
+      setMessages([{ role: 'assistant', content: `Loading model from ${modelPath}...` }]);
     } else {
-      alert('VaaBridge not found. Are you running in the Android app?');
+      setMessages([{ role: 'assistant', content: 'Error: VaaBridge not found. Please ensure you are running this inside the SmolChat Android app.' }]);
     }
   };
 

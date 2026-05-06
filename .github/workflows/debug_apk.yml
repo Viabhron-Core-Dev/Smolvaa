@@ -49,6 +49,9 @@ jobs:
       - name: Grant execute permission for gradlew
         run: chmod +x gradlew
 
+      - name: Generate Gradle Wrapper
+        run: gradle wrapper --gradle-version 8.13
+
       - name: Build Debug APK
         run: ./gradlew :app:assembleDebug --stacktrace
 

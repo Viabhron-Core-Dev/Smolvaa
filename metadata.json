@@ -1,0 +1,6 @@
+{
+  "name": "SmolChat Android",
+  "description": "A lightweight LLM chat application for Android using SmolLM and React.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}

@@ -57,7 +57,7 @@ class VaaBridge(private val webView: WebView, private val smolLM: SmolLM) {
             prompt
         }
         
-        scope.launch {
+        scope.launch(Dispatchers.Default) {
             _isGenerating.value = true
             var fullResponse = ""
             val fullQuery = if (chatHistory.isNotEmpty()) "$chatHistory\n$formattedPrompt" else formattedPrompt

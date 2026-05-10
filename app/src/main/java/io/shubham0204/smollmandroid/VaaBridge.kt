@@ -6,6 +6,7 @@ import io.shubham0204.smollm.SmolLM
 import kotlinx.coroutines.*
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
+import kotlinx.coroutines.flow.collect
 import org.json.JSONObject
 
 /**

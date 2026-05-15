@@ -66,7 +66,7 @@ function(build_library target_name)
     )
     target_link_libraries(
             ${target_name}
-            android log llama common vulkan
+            android log llama llama-common vulkan
     )
     # -Wl,--gc-sections: remove unused sections (garbage collection)
     # -flto: link-time optimization
